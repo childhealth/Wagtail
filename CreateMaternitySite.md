@@ -55,5 +55,5 @@ ALLOWED_HOSTS = ['www.example.com']
 ### Start the application
 Fire up the Quattro :wink:
 ```
-sudo python3 manag.py runserver 0.0.0.0:80
+sudo python3 manage.py runserver 0.0.0.0:80
 ```
