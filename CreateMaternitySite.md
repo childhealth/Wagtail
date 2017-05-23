@@ -57,3 +57,16 @@ Fire up the Quattro :wink:
 ```
 sudo python3 manage.py runserver 0.0.0.0:80
 ```
+Note: this is using HTTP not HTTPS. To use HTTPS requires either a CA issued certificate (£££) or self signed certificate (browser won't trust it). Therefore risk of traffic sniffing for this development project is considered acceptable.
+### Test the site
+Browse to:
+```
+http://www.example.com
+```
+Image here.
+
+Browse to:
+```
+http://www.example.com/admin
+```
+Image here
