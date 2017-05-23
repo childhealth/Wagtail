@@ -14,3 +14,32 @@ Python 3 should be installed by default on Ubuntu 16.04:
 python3 -V
 $ Python 3.5.2
 ```
+### Install pip 3
+Install the python 3 package manager:
+```
+sudo apt-get install python3-pip
+```
+Check pip installed:
+```
+pip3 -V
+$ pip 8.1.1 from /usr/lib/python3/dist-packages (python3.5)
+```
+The distribution package may not be the current version of pip, in which case when you use pip it will nag you to upgrade. Therefore do an upgrade now:
+```
+pip3install --upgrade pip
+```
+### Install virtual environments for python
+It's best practice to use virtual environments for running python applications. For this project not going to use them, but install them just in case:
+```
+sudo apt-get install python3-venv
+```
+### Install python pillow
+Pillow is the python imaging library:
+```
+sudo apt-get install python3-pil
+```
+### Install wagtail
+Installs the wagtail python application:
+```
+pip3 install wagtail
+```
