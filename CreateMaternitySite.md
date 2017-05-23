@@ -15,7 +15,11 @@ The following file structure is created:
 ~/maternity/maternity/
 ~/maternity/maternity/__init__.py
 ~/maternity/maternity/__pycache__
-~/maternity/maternity/settings/...
+~/maternity/maternity/settings/base.py
+~/maternity/maternity/settings/dev.py
+~/maternity/maternity/settings/__init__.py
+~/maternity/maternity/settings/production.py
+~/maternity/maternity/settings/__pycache__/...
 ~/maternity/maternity/static/...
 ~/maternity/maternity/templates/...
 ~/maternity/maternity/urls.py
@@ -25,3 +29,17 @@ The following file structure is created:
 ```
 ### Django setup
 Setup a new Django application for maternity (Wagtail uses Django):
+```
+cd ~/maternity/maternity
+pip3 install -r requirements.txt
+```
+### Synchronize database
+This Synchronizes the database state with the current set of models and migrations:
+```
+python3 manage.py migrate
+```
+### Create super user
+The super user for administration of site:
+```
+python3 manage.py createsuperuser
+```
