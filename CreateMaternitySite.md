@@ -69,4 +69,4 @@ Browse to:
 ```
 http://www.example.com/admin
 ```
-Image here
+![Image of admin login screen](https://github.com/childhealth/Wagtail/blob/master/WagtailAdminUI.png)
