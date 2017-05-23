@@ -38,7 +38,7 @@ The distribution package may not be the current version of pip, in which case wh
 pip3install --upgrade pip
 ```
 ### Install virtual environments for Python
-It's best practice to use virtual environments for running Python applications. For this project not going to use them, but install them just in case:
+It's best practice to use virtual environments for running Python applications. For this project not going to use them :pray:, but install them just in case:
 ```
 sudo apt-get install python3-venv
 ```
