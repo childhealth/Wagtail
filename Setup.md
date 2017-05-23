@@ -3,6 +3,14 @@ These are the steps to install and configure Wagtail on development server.
 
 The development server is running Ubuntu 16.04 LTS.
 
+The following TCP ports have been opened:
+
+| TCP Port | Use   |
+|----------|-------|
+| 22       | SSH   |
+| 80       | HTTP  |
+| 443      | SHTTP |
+
 ### Update OS
 Do the normal update of OS:
 ```
