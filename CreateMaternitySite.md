@@ -1,5 +1,5 @@
-# Create a new wagtail site for maternity
-With wagtail installed can create a new site for the maternity CMS.
+# Create a new Wagtail site for maternity
+With Wagtail installed can create a new site for the maternity CMS.
 ### Create new site
 It will be called maternity:
 ```
@@ -23,3 +23,5 @@ The following file structure is created:
 ~/maternity/requirements.txt
 ~/maternity/search/...
 ```
+### Django setup
+Setup a new Django application for maternity (Wagtail uses Django):
