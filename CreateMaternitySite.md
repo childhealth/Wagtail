@@ -43,3 +43,17 @@ The super user for administration of site:
 ```
 python3 manage.py createsuperuser
 ```
+### Set ALLOWED_HOSTS
+As the maternity site is going to be directly accssed from the intenet, need to put its DNS name in the settings Python module:
+```
+cd ~/maternity/maternity/settings
+```
+Edit `base.py` to add the following line:
+```
+ALLOWED_HOSTS = ['www.example.com']
+```
+### Start the application
+Fire up the Quattro :wink:
+```
+sudo python3 manag.py runserver 0.0.0.0:80
+```
