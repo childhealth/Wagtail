@@ -63,7 +63,7 @@ Browse to:
 ```
 http://www.example.com
 ```
-Image here.
+![Image of user screen](https://github.com/childhealth/Wagtail/blob/master/WagtailUserUI.png)
 
 Browse to:
 ```
