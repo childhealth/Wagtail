@@ -44,7 +44,7 @@ The super user for administration of site:
 python3 manage.py createsuperuser
 ```
 ### Set ALLOWED_HOSTS
-As the maternity site is going to be directly accssed from the intenet, need to put its DNS name in the settings Python module:
+As the maternity site is going to be directly accessed from the internet, need to put its DNS name in the settings Python module:
 ```
 cd ~/maternity/maternity/settings
 ```
