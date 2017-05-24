@@ -50,7 +50,7 @@ cd ~/maternity/maternity/settings
 ```
 Edit `base.py` to add the following line:
 ```
-ALLOWED_HOSTS = ['www.example.com']
+ALLOWED_HOSTS = ['www.example.com', 'localhost']
 ```
 ### Start the application
 Fire up the Quattro :wink:
