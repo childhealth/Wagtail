@@ -10,7 +10,7 @@ The following file structure is created:
 ```
 ~/maternity/
 ~/maternity/db.sqlite3
-~/maternity/home/
+~/maternity/home/...
 ~/maternity/manage.py
 ~/maternity/maternity/
 ~/maternity/maternity/__init__.py
