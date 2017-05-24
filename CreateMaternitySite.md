@@ -34,7 +34,7 @@ cd ~/maternity/maternity
 pip3 install -r requirements.txt
 ```
 ### Synchronize database
-This Synchronizes the database state with the current set of models and migrations:
+This synchronizes the database state with the current set of models and migrations:
 ```
 python3 manage.py migrate
 ```
