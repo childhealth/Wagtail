@@ -48,7 +48,7 @@ Pillow is the Python imaging library:
 sudo apt-get install python3-pil
 ```
 ### Install Wagtail
-Installs the Wagtail Python application:
+Installs the Wagtail Python package:
 ```
 pip3 install wagtail
 ```
