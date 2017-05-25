@@ -31,7 +31,7 @@ Look for a template filename formed from the app and model name, separating capi
 
 Edit `~/maternity/home/templates/home/home_page.html`
 
-```html
+```django
 {% extends "base.html" %}
 
 {% load wagtailcore_tags %}
