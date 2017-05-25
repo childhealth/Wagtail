@@ -1,4 +1,4 @@
-#25/05/2017
+# 25/05/2017
 
 Following [Your first Wagatail site](http://docs.wagtail.io/en/v1.10.1/getting_started/tutorial.html)
 ```
