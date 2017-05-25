@@ -11,3 +11,7 @@ python3 manage.py migrate
 
 sudo python3 manage.py runserver 0.0.0.0:80
 ```
+Look for a template filename formed from the app and model name, separating capital letters with underscores:
+```
+~/maternity/home/templates/home/home_page.html
+```
