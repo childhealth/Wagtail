@@ -3,7 +3,7 @@
 Following [Your first Wagatail site](http://docs.wagtail.io/en/v1.10.1/getting_started/tutorial.html)
 
 Edit `~/maternity/home/models.py`
-```
+```python
 from __future__ import absolute_import, unicode_literals
 
 from django.db import models
