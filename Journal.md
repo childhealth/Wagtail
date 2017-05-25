@@ -5,5 +5,6 @@ Following [Your first Wagatail site](http://docs.wagtail.io/en/v1.10.1/getting_s
 cd ~/maternity
 python3 manage.py makemigrations
 python3 manage.py migrate
-sudo 
+
+sudo python3 manage.py runserver 0.0.0.0:80
 ```
