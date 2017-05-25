@@ -27,7 +27,18 @@ python3 manage.py migrate
 
 sudo python3 manage.py runserver 0.0.0.0:80
 ```
-Look for a template filename formed from the app and model name, separating capital letters with underscores:
-```
-~/maternity/home/templates/home/home_page.html
+Look for a template filename formed from the app and model name, separating capital letters with underscores.
+
+Edit `~/maternity/home/templates/home/home_page.html`
+
+```html
+{% extends "base.html" %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+    {{ page.body|richtext }}
+{% endblock %}
 ```
