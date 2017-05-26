@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     ]
 ```
 ### Configure endpoints for API
-Create python file `~/maternity/maternity/api.py`
+Create python file `~/maternity/home/api.py`
 ```python
 # api.py
 
