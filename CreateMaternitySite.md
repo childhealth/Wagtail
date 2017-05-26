@@ -30,7 +30,7 @@ The following file structure is created:
 ### Django setup
 Setup a new Django application for maternity (Wagtail uses Django):
 ```
-cd ~/maternity/maternity
+cd ~/maternity
 pip3 install -r requirements.txt
 ```
 ### Synchronize database
