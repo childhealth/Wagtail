@@ -3,6 +3,7 @@ With Wagtail installed can create a new site for the maternity CMS.
 ### Create new site
 It will be called maternity:
 ```
+cd ~
 wagtail start maternity
 ```
 ### File structure
@@ -36,28 +37,22 @@ pip3 install -r requirements.txt
 ### Synchronize database
 This synchronizes the database state with the current set of models and migrations:
 ```
+cd ~/maternity
 python3 manage.py migrate
 ```
 ### Create super user
 The super user for administration of site:
 ```
+cd ~/maternity
 python3 manage.py createsuperuser
 ```
 ### Set ALLOWED_HOSTS
-As the maternity site is going to be directly accessed from the internet, need to put its DNS name in the settings Python module:
-```
-cd ~/maternity/maternity/settings
-```
-Edit `base.py` to add the following line:
+As the maternity site is going to be directly accessed from the internet, need to put its DNS name in the settings Python module. Edit `~/maternity/maternity/settings/base.py` to add the following line:
 ```python
 ALLOWED_HOSTS = ['www.example.com', 'localhost']
 ```
 ### Enable Wagtail API v2
-The API allows an external application to query and retrieve content programmatically:
-```
-cd ~/maternity/maternity/settings
-```
-Edit `base.py` to add the following:
+The API allows an external application to query and retrieve content programmatically. Edit `~/maternity/maternity/settings/base.py` to add the following:
 ```python
 INSTALLED_APPS = [
     ...
@@ -106,6 +101,7 @@ Note: as defined these APIs are open. No API key or client certificate is needed
 ### Start the application
 Fire up the Quattro :wink:
 ```
+cd ~/maternity
 sudo python3 manage.py runserver 0.0.0.0:80
 ```
 Note: this is using HTTP not HTTPS. To use HTTPS requires either a CA issued certificate (£££) or self signed certificate (browser won't trust it). Therefore risk of traffic sniffing for this development project is considered acceptable.
