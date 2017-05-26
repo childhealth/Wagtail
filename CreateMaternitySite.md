@@ -126,7 +126,8 @@ Browse (acting as an external system calling the API for pages) to:
 ```
 http://www.example.com/api/v2/pages/
 ```
-IMAGE
+![Image of pages api](https://github.com/childhealth/Wagtail/blob/master/WagtailPagesApi.png)
+
 Browse (acting as an external system calling the API for images) to:
 ```
 http://www.example.com/api/v2/images/
