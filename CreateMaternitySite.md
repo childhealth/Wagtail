@@ -102,6 +102,7 @@ urlpatterns = [
     url(r'', include(wagtail_urls)),
 ]
 ```
+Note: as defined these APIs are open. No API key or client certificate is needed to call them. Not considered an issue for ths experimental project.
 ### Start the application
 Fire up the Quattro :wink:
 ```
@@ -120,3 +121,19 @@ Browse to:
 http://www.example.com/admin
 ```
 ![Image of admin login screen](https://github.com/childhealth/Wagtail/blob/master/WagtailAdminUI.png)
+### Test the API
+Browse (acting as an external system calling the API for pages) to:
+```
+http://www.example.com/api/v2/pages/
+```
+IMAGE
+Browse (acting as an external system calling the API for images) to:
+```
+http://www.example.com/api/v2/images/
+```
+IMAGE
+Browse (acting as an external system calling the API for documents) to:
+```
+http://www.example.com/api/v2/documents/
+```
+IMAGE
