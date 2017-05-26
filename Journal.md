@@ -45,39 +45,46 @@ Edit `~/maternity/home/templates/home/home_page.html`
 # 26/05/2017
 The project template
 ```
-mysite/
+maternity/
+    db.sqlite3
     home/
         migrations/
             __init__.py
             0001_initial.py
             0002_create_homepage.py
+            ...
         templates/
             home/
                 home_page.html
+                # PUT YOUR TEMPLATES HERE
         __init__.py
+        __pycache__/
         models.py
     search/
         templates/
             search/
                 search.html
         __init__.py
+        __pycache__/
         views.py
-    mysite/
+    maternity/
         settings/
             __init__.py
+            __pycache__/
             base.py
             dev.py
             production.py
         static/
             css/
-                mysite.css
+                maternity.css
             js/
-                mysite.js
+                maternity.js
         templates/
             404.html
             500.html
             base.html
         __init__.py
+        __pycache__/
         urls.py
         wsgi.py
     manage.py
