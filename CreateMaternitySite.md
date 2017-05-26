@@ -49,7 +49,7 @@ As the maternity site is going to be directly accessed from the internet, need t
 cd ~/maternity/maternity/settings
 ```
 Edit `base.py` to add the following line:
-```
+```python
 ALLOWED_HOSTS = ['www.example.com', 'localhost']
 ```
 ### Enable Wagtail API v2
@@ -58,7 +58,7 @@ The API allows an external application to query and retrieve content programmati
 cd ~/maternity/maternity/settings
 ```
 Edit `base.py` to add the following:
-```
+```python
 INSTALLED_APPS = [
     ...
     "wagtail.api.v2",
