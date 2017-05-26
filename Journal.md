@@ -91,25 +91,25 @@ maternity/
     requirements.txt
 ```
 ### The “home” app
-Location: `/mysite/home/`
+Location: `/maternity/home/`
 
 This app is here to help get you started quicker by providing a HomePage model with migrations to create one when you first setup your app.
 
 ### Default templates and static files
-Location: `/mysite/mysite/templates/` and `/mysite/mysite/static/`
+Location: `/maternity/maternity/templates/` and `/maternity/maternity/static/`
 
 The templates directory contains base.html, 404.html and 500.html. These files are very commonly needed on Wagtail sites to they have been added into the template.
 
 The static directory contains an empty JavaScript and CSS file.
 
 ### Django settings
-Location: `/mysite/mysite/settings/`
+Location: `/maternity/maternity/settings/`
 
-The Django settings files are split up into base.py, dev.py, production.py and local.py.
+The Django settings files are split up into `base.py`, `dev.py`, `production.py` and `local.py`.
 
-base.py
+#### base.py
 This file is for global settings that will be used in both development and production. Aim to keep most of your configuration in this file.
-dev.py
+#### dev.py
 This file is for settings that will only be used by developers. For example: DEBUG = True
-production.py
+#### production.py
 This file is for settings that will only run on a production server. For example: DEBUG = False
