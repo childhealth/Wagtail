@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     ]
 ```
 ### Configure endpoints for API
-Create python file `~/maternity/home/api.py`
+Create python file `~/maternity/maternity/api.py`
 ```python
 # api.py
 
@@ -86,6 +86,21 @@ api_router = WagtailAPIRouter('wagtailapi')
 api_router.register_endpoint('pages', PagesAPIEndpoint)
 api_router.register_endpoint('images', ImagesAPIEndpoint)
 api_router.register_endpoint('documents', DocumentsAPIEndpoint)
+```
+Edit `~/maternity/maternity/urls.py`
+```python
+from .api import api_router
+
+urlpatterns = [
+    ...
+
+    url(r'^api/v2/', api_router.urls),
+
+    ...
+
+    # Ensure that the api_router line appears above the default Wagtail page serving route
+    url(r'', include(wagtail_urls)),
+]
 ```
 ### Start the application
 Fire up the Quattro :wink:
