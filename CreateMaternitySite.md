@@ -137,4 +137,4 @@ Browse (acting as an external system calling the API for documents) to:
 ```
 http://www.example.com/api/v2/documents/
 ```
-IMAGE
+![Image of documents api](https://github.com/childhealth/Wagtail/blob/master/WagtailDocumentsApi.png)
