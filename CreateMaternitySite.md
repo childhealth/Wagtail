@@ -52,6 +52,20 @@ Edit `base.py` to add the following line:
 ```
 ALLOWED_HOSTS = ['www.example.com', 'localhost']
 ```
+### Enable Wagtail API v2
+The API allows an external application to query and retrieve content programmatically:
+```
+cd ~/maternity/maternity/settings
+```
+Edit `base.py` to add the following:
+```
+INSTALLED_APPS = [
+    ...
+    "wagtail.api.v2",
+    "rest_framework",
+    ...
+    ]
+```
 ### Start the application
 Fire up the Quattro :wink:
 ```
