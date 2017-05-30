@@ -23,3 +23,9 @@ class DictionaryPage(Page):
         FieldPanel('entryName', classname="full"),
         FieldPanel('entryDescription', classname="full")
         ]
+
+     api_fields = [
+        APIField('entryKey'),
+        APIField('entryName'),
+        APIField('entryDescription'),
+    ]
