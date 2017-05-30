@@ -117,3 +117,4 @@ This file is for settings that will only run on a production server. For example
 Added `DictionaryPage` into `models.py` and enabled api fields.
 
 http://www.example.com/api/v2/pages/?type=home.DictionaryPage&fields=entryKey,entryName,entryDescription
+http://www.example.com/api/v2/pages/?type=home.ProviderPage&fields=*
