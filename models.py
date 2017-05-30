@@ -32,20 +32,20 @@ class DictionaryPage(Page):
         ]
 
 class ProviderPage(Page):
-    provID = models.CharField(max_length=50, unique=True)
-    provName = models.CharField(max_length=100, unique=True)
+    provID = models.CharField("ID", max_length=50, unique=True)
+    provName = models.CharField("Name", max_length=100, unique=True)
     # provLogo - binary
-    provAddressLine1 = models.CharField(max_length=50)
-    provAddressLine2 = models.CharField(max_length=50)
-    provAddressLine3 = models.CharField(max_length=50)
-    provAddressLine4 = models.CharField(max_length=50)
-    provAddressLine5 = models.CharField(max_length=50)
-    provPostcode = models.CharField(max_length=10)
-    provLat = models.FloatField()
-    provLng = models.FloatField()
-    provTel = models.CharField(max_length=50)
-    provEmail = models.EmailField(max_length=100)
-    provWeb = models.URLField(max_length=100)
+    provAddressLine1 = models.CharField("Address Line 1", max_length=50)
+    provAddressLine2 = models.CharField("Address Line 2", max_length=50)
+    provAddressLine3 = models.CharField("Address Line 3", max_length=50)
+    provAddressLine4 = models.CharField("Address Line 4", max_length=50)
+    provAddressLine5 = models.CharField("Address Line 5", max_length=50)
+    provPostcode = models.CharField("Postcode", max_length=10)
+    provLat = models.FloatField("Latitude")
+    provLng = models.FloatField("Longitude")
+    provTel = models.CharField("Telephone number", max_length=50)
+    provEmail = models.EmailField("Email address", max_length=100)
+    provWeb = models.URLField("Website address", max_length=100)
 
     content_panels = Page.content_panels + [
         FieldPanel('provID', classname="full"),
