@@ -8,15 +8,15 @@
 <h1>Provider Organisation</h1>
 <table>
   <tr>
-    <th>Identity</th>
+    <td>Identity</td>
     <td>{{ page.provID }}</td>
   </tr>
   <tr>
-    <th>Name</th>
+    <td>Name</td>
     <td>{{ page.provName }}</td>
   </tr>
   <tr>
-    <th>Address</th>
+    <td>Address</td>
     <td>
     {{ page.provAddressLine1|default_if_none:"" }}</br>
     {{ page.provAddressLine2|default_if_none:"" }}</br>
@@ -26,26 +26,26 @@
     </td>
   </tr>
   <tr>
-    <th>Postcode</th>
+    <td>Postcode</td>
     <td>{{ page.provPostcode|default_if_none:"" }}</td>
   </tr>
   <tr>
-    <th>Latitude and Longitude</th>
+    <td>Latitude and Longitude</td>
     <td>
     {{ page.provLat }},
     {{ page.provLng }}
     </td>
   </tr>
   <tr>
-    <th>Telephone</th>
+    <td>Telephone</td>
     <td>{{ page.provTel|default_if_none:"" }}</td>
   </tr>
   <tr>
-    <th>Email</th>
+    <td>Email</td>
     <td>{{ page.provEmail|default_if_none:"" }}</td>
   </tr>
   <tr>
-    <th>Website</th>
+    <td>Website</td>
     <td>{{ page.provWeb|default_if_none:"" }}</td>
   </tr>
 </table>
