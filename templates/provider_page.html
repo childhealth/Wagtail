@@ -18,16 +18,16 @@
   <tr>
     <th>Address</th>
     <td>
-    {{ page.provAddressLine1 }}</br>
-    {{ page.provAddressLine2 }}</br>
-    {{ page.provAddressLine3 }}</bt>
-    {{ page.provAddressLine4 }}</br>
-    {{ page.provAddressLine5 }}</br>
+    {{ page.provAddressLine1|default_if_none:"" }}</br>
+    {{ page.provAddressLine2|default_if_none:"" }}</br>
+    {{ page.provAddressLine3|default_if_none:"" }}</bt>
+    {{ page.provAddressLine4|default_if_none:"" }}</br>
+    {{ page.provAddressLine5|default_if_none:"" }}</br>
     </td>
   </tr>
   <tr>
     <th>Postcode</th>
-    <td>{{ page.provPostcode }}</td>
+    <td>{{ page.provPostcode|default_if_none:"" }}</td>
   </tr>
   <tr>
     <th>Latitude and Longitude</th>
@@ -38,15 +38,15 @@
   </tr>
   <tr>
     <th>Telephone</th>
-    <td>{{ page.provTel }}</td>
+    <td>{{ page.provTel|default_if_none:"" }}</td>
   </tr>
   <tr>
     <th>Email</th>
-    <td>{{ page.provEmail }}</td>
+    <td>{{ page.provEmail|default_if_none:"" }}</td>
   </tr>
   <tr>
     <th>Website</th>
-    <td>{{ page.provWeb }}</td>
+    <td>{{ page.provWeb|default_if_none:"" }}</td>
   </tr>
 </table>
 {% endblock %}
