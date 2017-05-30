@@ -5,6 +5,7 @@ from django.db import models
 from wagtail.wagtailcore.models import Page
 from wagtail.wagtailcore.fields import RichTextField
 from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.api import APIField
 
 class HomePage(Page):
     body = RichTextField(blank=True)
