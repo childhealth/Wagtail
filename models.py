@@ -65,7 +65,7 @@ class ProviderPage(Page):
         FieldPanel('provWeb', classname="full"),
         ]
 
-     api_fields = [
+    api_fields = [
         APIField('provID'),
         APIField('provName'),
         # provLogo
