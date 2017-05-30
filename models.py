@@ -23,27 +23,3 @@ class DictionaryPage(Page):
         FieldPanel('entryName', classname="full"),
         FieldPanel('entryDescription', classname="full")
         ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                   [ Read 25 lines ]
-^G Get Help   ^O Write Out  ^W Where Is   ^K Cut Text   ^J Justify    ^C Cur Pos
-^X Exit       ^R Read File  ^\ Replace    ^U Uncut Text ^T To Linter  ^_ Go To Line
