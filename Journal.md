@@ -114,7 +114,7 @@ This file is for settings that will only be used by developers. For example: DEB
 #### production.py
 This file is for settings that will only run on a production server. For example: DEBUG = False
 # 30/05/2017
-Added `DictionaryPage` into `models.py` and enabled api fields.
-
+Added `DictionaryPage` into `models.py` and enabled api fields. Added `dictionary_page.html` template file.
 http://www.example.com/api/v2/pages/?type=home.DictionaryPage&fields=entryKey,entryName,entryDescription
+Added `ProviderPage` into `models.py` and enabled api fields. Added `provider_page.html` template file.
 http://www.example.com/api/v2/pages/?type=home.ProviderPage&fields=*
