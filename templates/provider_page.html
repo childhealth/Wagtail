@@ -1,1 +1,21 @@
+{% extends "base.html" %}
 
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+    {{ page.provID }}
+    {{ page.provName }}
+    {{ page.provAddressLine1 }}
+    {{ page.provAddressLine2 }}
+    {{ page.provAddressLine3 }}
+    {{ page.provAddressLine4 }}
+    {{ page.provAddressLine5 }}
+    {{ page.provPostcode }}
+    {{ page.provLat }}
+    {{ page.provLng }}
+    {{ page.provTel }}
+    {{ page.provEmail }}
+    {{ page.provWeb }}
+{% endblock %}
