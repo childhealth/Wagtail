@@ -35,17 +35,17 @@ class ProviderPage(Page):
     provID = models.CharField("ID", max_length=50, unique=True)
     provName = models.CharField("Name", max_length=100, unique=True)
     # provLogo - binary
-    provAddressLine1 = models.CharField("Address Line 1", max_length=50, null=True)
-    provAddressLine2 = models.CharField("Address Line 2", max_length=50, null=True)
-    provAddressLine3 = models.CharField("Address Line 3", max_length=50, null=True)
-    provAddressLine4 = models.CharField("Address Line 4", max_length=50, null=True)
-    provAddressLine5 = models.CharField("Address Line 5", max_length=50, null=True)
-    provPostcode = models.CharField("Postcode", max_length=10, null=True)
-    provLat = models.FloatField("Latitude", null=True)
-    provLng = models.FloatField("Longitude", null=True)
-    provTel = models.CharField("Telephone number", max_length=50, null=True)
-    provEmail = models.EmailField("Email address", max_length=100, null=True)
-    provWeb = models.URLField("Website address", max_length=100, null=True)
+    provAddressLine1 = models.CharField("Address Line 1", max_length=50, null=True, blank=True)
+    provAddressLine2 = models.CharField("Address Line 2", max_length=50, null=True, blank=True)
+    provAddressLine3 = models.CharField("Address Line 3", max_length=50, null=True, blank=True)
+    provAddressLine4 = models.CharField("Address Line 4", max_length=50, null=True, blank=True)
+    provAddressLine5 = models.CharField("Address Line 5", max_length=50, null=True, blank=True)
+    provPostcode = models.CharField("Postcode", max_length=10, null=True, blank=True)
+    provLat = models.FloatField("Latitude", null=True, blank=True)
+    provLng = models.FloatField("Longitude", null=True, blank=True)
+    provTel = models.CharField("Telephone number", max_length=50, null=True, blank=True)
+    provEmail = models.EmailField("Email address", max_length=100, null=True, blank=True)
+    provWeb = models.URLField("Website address", max_length=100, null=True, blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('provID', classname="full"),
