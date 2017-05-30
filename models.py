@@ -41,11 +41,11 @@ class ProviderPage(Page):
     provAddressLine4 = models.CharField(max_length=50)
     provAddressLine5 = models.CharField(max_length=50)
     provPostcode = models.CharField(max_length=10)
-    # provLat
-    # provLng
+    provLat = models.FloatField()
+    provLng = models.FloatField()
     provTel = models.CharField(max_length=50)
-    provEmail = models.CharField(max_length=100)
-    provWeb = models.CharField(max_length=100)
+    provEmail = models.EmailField(max_length=100)
+    provWeb = models.URLField(max_length=100)
 
     content_panels = Page.content_panels + [
         FieldPanel('provID', classname="full"),
