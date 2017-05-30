@@ -5,17 +5,37 @@
 {% block body_class %}template-homepage{% endblock %}
 
 {% block content %}
-    {{ page.provID }}
-    {{ page.provName }}
-    {{ page.provAddressLine1 }}
-    {{ page.provAddressLine2 }}
-    {{ page.provAddressLine3 }}
-    {{ page.provAddressLine4 }}
-    {{ page.provAddressLine5 }}
-    {{ page.provPostcode }}
-    {{ page.provLat }}
+<h1>Provider Organisation</h1>
+<table>
+  <tr>
+    <th>Identity</th>
+    <td>{{ page.provID }}</td>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <td>{{ page.provName }}</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td>
+    {{ page.provAddressLine1 }}</br>
+    {{ page.provAddressLine2 }}</br>
+    {{ page.provAddressLine3 }}</bt>
+    {{ page.provAddressLine4 }}</br>
+    {{ page.provAddressLine5 }}</br>
+    </td>
+  </tr>
+  <tr>
+    <th>Postcode</th>
+    <td>{{ page.provPostcode }}</td>
+  </tr>
+  <tr>
+    <th>Latitude and Longitude</th>
+    <td>
+    {{ page.provLat }} -
     {{ page.provLng }}
     {{ page.provTel }}
     {{ page.provEmail }}
     {{ page.provWeb }}
+</table>
 {% endblock %}
