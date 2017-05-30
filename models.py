@@ -52,7 +52,6 @@ class ProviderPage(Page):
         FieldPanel('provName', classname="full"),
         # provLogo
         FieldPanel('provAddressLine1', classname="full"),
-        FieldPanel('provAddressLine1', classname="full"),
         FieldPanel('provAddressLine2', classname="full"),
         FieldPanel('provAddressLine3', classname="full"),
         FieldPanel('provAddressLine4', classname="full"),
