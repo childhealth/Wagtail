@@ -58,8 +58,8 @@ class ProviderPage(Page):
         FieldPanel('provAddressLine4', classname="full"),
         FieldPanel('provAddressLine5', classname="full"),
         FieldPanel('provPostcode', classname="full"),
-        # provLat
-        # provLng
+        FieldPanel('provLat', classname="full"),
+        FieldPanel('provLng', classname="full"),
         FieldPanel('provTel', classname="full"),
         FieldPanel('provEmail', classname="full"),
         FieldPanel('provWeb', classname="full"),
@@ -75,8 +75,8 @@ class ProviderPage(Page):
         APIField('provAddressLine4'),
         APIField('provAddressLine5'),
         APIField('provPostcode'),
-        # provLat
-        # provLng
+        APIField('provLat'),
+        APIField('provLng'),
         APIField('provTel'),
         APIField('provEmail'),
         APIField('provWeb'),
