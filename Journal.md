@@ -113,3 +113,7 @@ This file is for global settings that will be used in both development and produ
 This file is for settings that will only be used by developers. For example: DEBUG = True
 #### production.py
 This file is for settings that will only run on a production server. For example: DEBUG = False
+# 30/05/2017
+Added `DictionaryPage` into `models.py` and enabled api fields.
+
+http://www.example.com/api/v2/pages/?type=home.DictionaryPage&fields=entryKey,entryName,entryDescription
