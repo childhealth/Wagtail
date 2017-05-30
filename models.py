@@ -29,7 +29,7 @@ class DictionaryPage(Page):
         APIField('entryKey'),
         APIField('entryName'),
         APIField('entryDescription'),
-    ]
+        ]
 
 class ProviderPage(Page):
     provID = models.CharField(max_length=50, unique=True)
@@ -70,13 +70,14 @@ class ProviderPage(Page):
         APIField('provName'),
         # provLogo
         APIField('provAddressLine1'),
-                APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-                 APIField('provAddressLine1'),
-    ]
+        APIField('provAddressLine2'),
+        APIField('provAddressLine3'),
+        APIField('provAddressLine4'),
+        APIField('provAddressLine5'),
+        APIField('provPostcode'),
+        # provLat
+        # provLng
+        APIField('provTel'),
+        APIField('provEmail'),
+        APIField('provWeb'),
+        ]
