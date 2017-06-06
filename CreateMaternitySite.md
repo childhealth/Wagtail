@@ -51,6 +51,12 @@ As the maternity site is going to be directly accessed from the internet, need t
 ```python
 ALLOWED_HOSTS = ['www.example.com', 'localhost']
 ```
+### Set time zone and language
+Edit `~/maternity/maternity/settings/base.py` to add the following line:
+```python
+TIME_ZONE = 'Europe/London'
+LANGUAGE_CODE = 'en-gb'
+```
 ### Enable Wagtail API v2
 The API allows an external application to query and retrieve content programmatically. Edit `~/maternity/maternity/settings/base.py` to add the following:
 ```python
