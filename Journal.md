@@ -132,5 +132,5 @@ ps -aux | egrep "sudo"
 ```
 To stop the process:
 ```
-kill -9 <PID>
+sudo kill -9 <PID>
 ```
