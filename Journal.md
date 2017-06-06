@@ -124,8 +124,11 @@ http://www.example.com/api/v2/pages/?type=home.ProviderPage&fields=*
 # 06/06/2017
 Quick and dirty way to launch Wagtail as a background process that won't terminate when you close the stty session:
 ```
+cd ~/maternity
 sudo nohup python3 manage.py runserver 0.0.0.0:80 > ./logfile 2>&1 &
 ```
+All messages from Wagtail will be written to file `~/maternity/logfile` 
+
 To find the PID of the Wagtail process:
 ```
 ps -aux | egrep "sudo"
