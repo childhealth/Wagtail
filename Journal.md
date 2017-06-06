@@ -122,7 +122,7 @@ Added `ProviderPage` into `models.py` and enabled api fields. Added `provider_pa
 
 http://www.example.com/api/v2/pages/?type=home.ProviderPage&fields=*
 # 06/06/2017
-Quick and dirty way to launch Wagtail as a daemon:
+Quick and dirty way to launch Wagtail as a background process that won't terminate when you close the stty session:
 ```
 sudo nohup python3 manage.py runserver 0.0.0.0:80 > ./logfile 2>&1 &
 ```
