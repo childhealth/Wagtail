@@ -121,3 +121,16 @@ http://www.example.com/api/v2/pages/?type=home.DictionaryPage&fields=entryKey,en
 Added `ProviderPage` into `models.py` and enabled api fields. Added `provider_page.html` template file.
 
 http://www.example.com/api/v2/pages/?type=home.ProviderPage&fields=*
+# 06/06/2017
+Quick and dirty way to launch Wagtail as a daemon:
+```
+sudo nohup python3 manage.py runserver 0.0.0.0:80 > ./logfile 2>&1 &
+```
+To find the PID of the Wagtail process:
+```
+ps -aux | egrep "sudo"
+```
+To stop the process:
+```
+kill -9 <PID>
+```
