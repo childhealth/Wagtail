@@ -7,6 +7,7 @@ from wagtail.wagtailcore.fields import RichTextField
 from wagtail.wagtailadmin.edit_handlers import FieldPanel
 from wagtail.api import APIField
 from wagtail.wagtailsnippets.models import register_snippet
+from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
 
 class HomePage(Page):
     body = RichTextField(blank=True)
