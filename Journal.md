@@ -137,3 +137,18 @@ To stop the process:
 ```
 sudo kill -9 <PID>
 ```
+# 09/06/2017
+Added snippets into `models.py`:
+```
+TrimesterCategories
+GestationalAgeCategories
+TopicCategories
+```
+Added models into `models.py`:
+```
+ArticlePage
+```
+Added template files:
+```
+article_page.html
+```
