@@ -19,6 +19,7 @@ class HomePage(Page):
 @register_snippet
 class TrimesterCategory(models.Model):
     name = models.CharField(max_length=255)
+    code = models.IntegerField()
     icon = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True,
         on_delete=models.SET_NULL, related_name='+'
