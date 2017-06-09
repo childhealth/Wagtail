@@ -27,6 +27,7 @@ class TrimesterCategory(models.Model):
 
     panels = [
         FieldPanel('name'),
+        FieldPanel('code'),
         ImageChooserPanel('icon'),
     ]
 
