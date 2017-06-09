@@ -18,8 +18,8 @@ class HomePage(Page):
 
 @register_snippet
 class TrimesterCategory(models.Model):
-    name = models.CharField(max_length=255)
-    code = models.IntegerField()
+    name = models.CharField(max_length=255, unique=True)
+    code = models.IntegerField(unique=True)
     icon = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True,
         on_delete=models.SET_NULL, related_name='+'
@@ -39,8 +39,8 @@ class TrimesterCategory(models.Model):
 
 @register_snippet
 class GestationalAgeCategory(models.Model):
-    name = models.CharField(max_length=255)
-    code = models.IntegerField()
+    name = models.CharField(max_length=255, unique=True)
+    code = models.IntegerField(unique=True)
     icon = models.ForeignKey(
         'wagtailimages.Image', null=True, blank=True,
         on_delete=models.SET_NULL, related_name='+'
