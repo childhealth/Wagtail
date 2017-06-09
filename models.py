@@ -36,7 +36,28 @@ class TrimesterCategory(models.Model):
 
     class Meta:
         verbose_name_plural = 'trimester categories'
-        
+
+@register_snippet
+class GestationalAgeCategory(models.Model):
+    name = models.CharField(max_length=255)
+    code = models.IntegerField()
+    icon = models.ForeignKey(
+        'wagtailimages.Image', null=True, blank=True,
+        on_delete=models.SET_NULL, related_name='+'
+    )
+
+    panels = [
+        FieldPanel('name'),
+        FieldPanel('code'),
+        ImageChooserPanel('icon'),
+    ]
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = 'gestational age categories'
+
 class DictionaryPage(Page):
     entryKey = models.CharField(max_length=20, unique=True)
     entryName = models.CharField(max_length=100, unique=True)
