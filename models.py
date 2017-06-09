@@ -78,7 +78,14 @@ class TopicCategory(models.Model):
 
     class Meta:
         verbose_name_plural = 'topic categories'
- 
+
+class ArticlePage(Page):
+    body = RichTextField(blank=True)
+
+    content_panels = Page.content_panels + [
+        FieldPanel('body', classname="full")
+        ]
+        
 class DictionaryPage(Page):
     entryKey = models.CharField(max_length=20, unique=True)
     entryName = models.CharField(max_length=100, unique=True)
